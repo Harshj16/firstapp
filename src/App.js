@@ -1,9 +1,13 @@
 // import logo from './logo.svg'
 import './App.css'
-import Heading from './Heading'
+import { Heading2 } from './Heading'
 
 function App () {
-  return <Heading />
+  return (
+    <div>
+      <Heading2 />
+    </div>
+  )
 }
 
 export default App
