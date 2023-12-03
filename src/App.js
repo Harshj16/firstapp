@@ -5,7 +5,7 @@ import { Heading2 } from './Heading'
 function App () {
   return (
     <div>
-      <Heading2 />
+      <Heading2 name="Test Props"/>
     </div>
   )
 }
