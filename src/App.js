@@ -1,15 +1,13 @@
 // import logo from './logo.svg'
 import './App.css'
-import Button from './Button'
-import { Heading2 } from './Heading'
+// import Button from './Button'
+// import { Heading2 } from './Heading'
+import Counter from './State'
 
 function App () {
   return (
     <div>
-      <Heading2>Test Props</Heading2>
-      <div>
-        <Button />
-      </div>
+      <Counter initialValue = {15}/>
     </div>
   )
 }
