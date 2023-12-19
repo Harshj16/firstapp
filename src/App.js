@@ -1,13 +1,17 @@
 // import logo from './logo.svg'
+import { useState } from 'react'
 import './App.css'
 // import Button from './Button'
 // import { Heading2 } from './Heading'
-import Counter from './State'
+// import Counter from './State'
+import Login from './Login'
 
 function App () {
+  const [info] = useState()
+
   return (
     <div>
-      <Counter initialValue = {15}/>
+      <Login props={info} />
     </div>
   )
 }
