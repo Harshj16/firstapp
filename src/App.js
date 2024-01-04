@@ -7,7 +7,7 @@ import './App.css'
 // import Login from './Login'
 import Home from './Home'
 import About from './About'
-import { BrowserRouter as Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 
 function App () {
   // const [info] = useState()
@@ -15,18 +15,16 @@ function App () {
   return (
     <div>
       <nav>
-        <Link to='/' className='nav-item'>
-          Homepage
+        <Link to='/home' className='nav-item'>
+          Home
         </Link>
+        <br/>
         <Link to='/about' className='nav-item'>
-          About Little Lemon
-        </Link>
-        <Link to='/contact' className='nav-item'>
-          Contact
+          About Me
         </Link>
       </nav>
       <Routes>
-        <Route path='/' element={<Home />}></Route>
+        <Route path='/home' element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route>
       </Routes>
     </div>
